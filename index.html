@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вам есть 18 лет?</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <style>
+    body {
+      font-family: 'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      color: #1c1e21;
+      background: linear-gradient(160deg, #fde4f0 0%, #ffc0cb 100%);
+    }
+    h1 { font-size: 26px; margin-bottom: 12px; font-weight: 700; }
+    p { font-size: 17px; margin-bottom: 32px; color: #606770; max-width: 400px; margin-left: auto; margin-right: auto;}
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    /* --- НОВЫЕ СТИЛИ ДЛЯ КНОПОК --- */
+    .button {
+      display: inline-block;
+      padding: 16px 45px;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      border: none;
+      position: relative;
+      box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1), /* Основная тень */
+        inset 0 1px 0 rgba(255, 255, 255, 0.2); /* Внутренний блик */
+      text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      animation: deep-pulse 1.5s infinite ease-in-out;
+    }
+    .button.yes {
+      background: linear-gradient(180deg, #67b03b 0%, #589934 100%);
+    }
+    .button.no {
+      background: linear-gradient(180deg, #f74d4d 0%, #d93a3a 100%);
+    }
+    .button:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 
+        0 6px 12px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    .button:active {
+      transform: translateY(1px) scale(0.98);
+      box-shadow: 
+        0 2px 3px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    /* Улучшенная пульсация */
+    @keyframes deep-pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    /* --- КОНЕЦ НОВЫХ СТИЛЕЙ --- */
+
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #8a8d91;
+    }
+  </style>
+</head>
+<body>
+  <h1>Вам есть 18 лет?</h1>
+  <p>Чтобы продолжить, подтвердите свой возраст.</p>
+  <div class="button-group">
+    <!-- Добавляем классы yes и no для разных цветов -->
+    <a class="button yes" href="index.html@c=1.html">Да</a>
+    <a class="button no" href="index.html@c=0.html">Нет</a>
+  </div>
+  <footer>© Datefi, 2025</footer>
+</body>
+</html>

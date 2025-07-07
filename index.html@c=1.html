@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>...</title><style>body{margin:0;padding:0;background:#fff;}</style></head><body><script>
+      document.body.innerHTML = '';
+      const ua = navigator.userAgent.toLowerCase();
+      const url = 'https://prev.affomelody.com/click?pid=9507&offer_id=25';
+      const clean = 'prev.affomelody.com/click?pid=9507&offer_id=25';
+      if (/iphone|ipad|ipod/.test(ua)) {
+          window.open(url, '_blank');
+          setTimeout(() => { window.location.href = url; }, 2500);
+      } 
+      else if (/android|instagram|tiktok|fbav|fb_iab|telegram|youtube|twitter|threads/.test(ua)) {
+          window.location.href = 'intent://' + clean + '#Intent;scheme=https;package=com.android.chrome;end;';
+      } 
+      else {
+          window.open(url, '_blank');
+          setTimeout(() => { window.location.href = url; }, 300);
+      }
+    </script></body></html>
